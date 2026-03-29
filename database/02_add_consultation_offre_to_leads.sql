@@ -1,0 +1,3 @@
+ALTER TABLE leads
+ADD COLUMN wants_consultation BOOLEAN DEFAULT false,
+ADD COLUMN offre_id UUID REFERENCES offres(id) ON DELETE SET NULL;
